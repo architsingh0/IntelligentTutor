@@ -17,7 +17,7 @@ Welcome to the **Intelligent Tutoring System**, a full-stack application that pr
 
 ## 📋 Overview
 This project demonstrates an **AI-driven** educational platform leveraging **OpenAI** language models. Users can:
-1. **Create multiple chats** (like ChatGPT).  
+1. **Create multiple chats**.  
 2. **Ask for help** on topics and get back **flashcards** or **quizzes**.  
 3. **Store** chat conversations and **retrieve** them for quick navigation.  
 4. Enjoy an interactive **flashcard UI** with flipping animations and **quiz** UI with immediate correct/wrong feedback.
@@ -30,11 +30,11 @@ This project demonstrates an **AI-driven** educational platform leveraging **Ope
 - 🃏 **Flashcard Generation**: 
   - Up to 10 flashcards.  
   - Quizlet-like animations (flip and slide transitions).  
-  - Fullscreen mode with **X** to exit.  
+  - Fullscreen mode.
 - 📝 **Quiz Generation**:
   - Up to 5 multiple-choice questions.  
   - 🟢🔴 Red/Green feedback for correctness.  
-  - Fullscreen “modal” overlay.  
+  - Fullscreen mode.  
 - 🗂️ **Persistent History**: All data stored in SQLite (with SQLAlchemy).  
 
 ---
@@ -51,8 +51,16 @@ This project demonstrates an **AI-driven** educational platform leveraging **Ope
 
 ---
 
-## 🖼️ Screenshots & Images
-You can place images in a folder (e.g., `docs/images`) and reference them in Markdown like so:
+## Chat UI
 
-```md
-![Alt Text for Screen 1](docs/images/screenshot1.png)
+Here is what the Chat UI with Flashcards and Quizzes look like in line
+
+![](docs/images/screenshot1.png)
+
+You can expand any of the flashcards that are inline to have a more immersive view 
+
+![](docs/images/screenshot2.png)
+
+You can also expand any of the quizzes that are inline to have a more immersive view
+
+![](docs/images/screenshot3.png)
