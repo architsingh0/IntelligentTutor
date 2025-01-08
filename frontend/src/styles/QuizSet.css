@@ -1,0 +1,109 @@
+.quiz-set {
+    position: relative;
+    margin: 1rem 0;
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  /* The expand button in normal mode */
+  .quiz-fullscreen-toggle-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The dark backdrop that covers the entire screen */
+  .quiz-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.7);
+  
+    /* 
+     * This centers its contents (the .quiz-inner-wrapper) both horizontally 
+     * and vertically. 
+     */
+    display: grid;
+    place-items: center;
+  }
+  
+  /* The "modal box" with quiz content inside the fullscreen overlay */
+  .quiz-inner-wrapper {
+    position: relative;
+    width: 80vw;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* The X button in the top-right corner of the modal box */
+  .quiz-close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The rest is the same as before */
+  .quiz-question-block {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .quiz-question-text {
+    font-weight: bold;
+  }
+  
+  .quiz-question-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+  
+  .quiz-option {
+    margin: 0.25rem 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .quiz-option:hover {
+    background-color: #eee;
+  }
+  
+  .quiz-option.correct {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .quiz-option.wrong {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Hide original .fullscreen-mode styling, if any */
+  .fullscreen-mode {
+    /* Overridden by our new modal approach; 
+       no direct styling needed here unless you want it for something else. */
+  }
+  
