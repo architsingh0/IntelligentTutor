@@ -11,7 +11,7 @@ function App() {
   // Fetch the list of chats for the sidebar
   const fetchChats = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/chats");
+      const res = await axios.get("https://intelligenttutor.onrender.com/api/chats");
       setChats(res.data);
     } catch (err) {
       console.error("Error fetching chats:", err);
@@ -24,7 +24,7 @@ function App() {
 
   const handleCreateChat = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/chats", {
+      const res = await axios.post("https://intelligenttutor.onrender.com/api/chats", {
         title: "Untitled Chat"
       });
       const newChat = res.data;
