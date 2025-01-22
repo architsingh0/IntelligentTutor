@@ -8,7 +8,7 @@ function ChatWindow({ chatId }) {
 
   const fetchMessages = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/chat/${chatId}/messages`);
+      const res = await axios.get(`https://intelligenttutor.onrender.com/api/chat/${chatId}/messages`);
       setMessages(res.data);
     } catch (err) {
       console.error("Error fetching messages:", err);
@@ -25,7 +25,7 @@ function ChatWindow({ chatId }) {
     if (!newMessage.trim()) return;
 
     try {
-      const res = await axios.post(`http://localhost:5000/api/chat/${chatId}/message`, {
+      const res = await axios.post(`https://intelligenttutor.onrender.com/api/chat/${chatId}/message`, {
         content: newMessage
       });
       const { user_message, assistant_message } = res.data;
